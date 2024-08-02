@@ -1,0 +1,21 @@
+---
+name: hAdvancedStats
+version: 0.0.1
+main: hotka_original\hAdvancedStats\Main
+description: "Выдаёт информацию об указанном игроке"
+api: 0.0.0 # Нужно поработать над максимальной поддержкой pmmp 2.0-5.17
+src-namespace-prefix: hotka_original\hAdvancedStats
+author: hotka_original # t.me/hotka_original
+
+commands:
+ playerinfo:
+  description: "Выдаёт информацию об указанном игроке"
+  usage: "/searchinfo <player>"
+  permission: searchinfo.use
+  aliases: ['si']
+
+permissions:
+  playerinfo.use:
+    default: op
+    description: "Возволяет запускать команду /searchinfo (/si)"
+...
